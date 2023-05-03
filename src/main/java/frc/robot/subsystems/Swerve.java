@@ -24,10 +24,11 @@ public class Swerve extends SubsystemBase {
     public Pigeon2 gyro;
 
     public Swerve() {
+        Timer.delay(1.0);
         gyro = new Pigeon2(Constants.Swerve.pigeonID, Constants.Swerve.CAN_STRING);
         gyro.configFactoryDefault();
         zeroGyro();
-
+        Timer.delay(1.0);
         mSwerveMods = new SwerveModule[] {
             new SwerveModule(0, Constants.Swerve.Mod0.constants, Constants.Swerve.CAN_STRING),
             new SwerveModule(1, Constants.Swerve.Mod1.constants, Constants.Swerve.CAN_STRING),
