@@ -17,12 +17,14 @@ public final class Constants {
         public static final int pigeonID = 0;
         public static final boolean invertGyro = false; // Always ensure Gyro is CCW+ CW-
 
+        public static final String CAN_STRING = "seCANdary";
+
         public static final COTSFalconSwerveConstants chosenModule =  //TODO: This must be tuned to specific robot
             COTSFalconSwerveConstants.SDSMK4i(COTSFalconSwerveConstants.driveGearRatios.SDSMK4i_L2);
 
         /* Drivetrain Constants */
-        public static final double trackWidth = Units.inchesToMeters(28); //TODO: This must be tuned to specific robot
-        public static final double wheelBase = Units.inchesToMeters(28); //TODO: This must be tuned to specific robot
+        public static final double trackWidth = Units.inchesToMeters(22.8); //TODO: This must be tuned to specific robot
+        public static final double wheelBase = Units.inchesToMeters(22.8); //TODO: This must be tuned to specific robot
         public static final double wheelCircumference = chosenModule.wheelCircumference;
 
         /* Swerve Kinematics 
@@ -80,7 +82,7 @@ public final class Constants {
 
         /* Swerve Profiling Values */
         /** Meters per Second */
-        public static final double maxSpeed = 4.5; //TODO: This must be tuned to specific robot
+        public static final double maxSpeed =  Units.feetToMeters(16.3); //TODO: This must be tuned to specific robot
         /** Radians per Second */
         public static final double maxAngularVelocity = 10.0; //TODO: This must be tuned to specific robot
 
